@@ -689,30 +689,30 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# About Section
+# lore Section
 --------------------------------------------------------------*/
-.about .content h2 {
+.lore .content h2 {
   font-weight: 700;
   font-size: 24px;
   color: var(--color-primary);
 }
 
-.about .content ul {
+.lore .content ul {
   list-style: none;
   padding: 0;
 }
 
-.about .content ul li {
+.lore .content ul li {
   margin-bottom: 20px;
   display: flex;
   align-items: center;
 }
 
-.about .content ul strong {
+.lore .content ul strong {
   margin-right: 10px;
 }
 
-.about .content ul i {
+.lore .content ul i {
   font-size: 16px;
   margin-right: 5px;
   color: var(--color-primary);
