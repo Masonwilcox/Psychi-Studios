@@ -108,8 +108,8 @@ h6 {
       font-size: 2em; /* Slightly smaller text */
   }
   .carousel-caption {
-      height: 10vh;
-      width: 30vw;
+      height: 15vh;
+      width: 35vw;
       font-size: 0.9em;
   }
 }
@@ -238,6 +238,7 @@ h6 {
   margin-left: 0;
   /* If you need any specific alignment or padding, add here */
 }
+
 .team-member {
   position: relative;
   margin-bottom: 30px; /* Increased spacing between rows */
@@ -247,10 +248,9 @@ h6 {
 
 .team-member img {
   width: 90%;
-  height: auto;
+  height: 40vh; /* Adjust this value to your preference */
   border-radius: 10px;
-  transition: transform 0.3s ease-in-out;
-  object-fit: cover; /* Ensures images cover the area properly */
+  object-fit: cover; /* This will ensure images are not stretched */
 }
 
 
@@ -275,6 +275,41 @@ h6 {
 .team-member:hover .bio {
   transform: translateY(0);
 }
+
+.member-info {
+  text-align: center;
+  padding: 10px;
+}
+
+.member-info h3 {
+  margin-top: 10px;
+  font-size: 1.2em; /* Adjust the size as needed */
+}
+
+.member-info p {
+  font-size: 1em; /* Adjust the size as needed */
+}
+
+.team-member .bio {
+  display: none;
+  text-align: left;
+  padding: 20px;
+}
+
+.team-member:hover .bio {
+  display: block;
+}
+
+.team-member .bio ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;
+  margin: 0;
+}
+
+.team-member .bio ul li {
+  margin-bottom: 5px; /* Spacing between list items */
+}
+
 
 /* Responsive Design */
 @media (max-width: 992px) {
