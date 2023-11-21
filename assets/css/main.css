@@ -68,7 +68,7 @@ h6 {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black tint */
+  background: rgba(0, 0, 0, 0.3); /* Semi-transparent black tint */
   z-index: 1;
 }
 
@@ -164,6 +164,36 @@ h6 {
       font-size: 0.7em;
   }
 }
+
+
+@media (min-width: 992px) { /* Adjust for large screens */
+  .lore .container .row {
+    align-items: stretch; /* Aligns items vertically */
+  }
+
+  .lore .container .row > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .lore img {
+    max-height: 100vh; /* Maximum height of the image */
+    height: auto; /* Maintain aspect ratio */
+    width: 100%; /* Full width of its container */
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 991px) { /* Adjust for small screens */
+  .lore img {
+    max-height: 80vh;
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Lore Section
