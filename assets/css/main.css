@@ -369,6 +369,36 @@ h6 {
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+
+.about-page .about-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.about-page .about-img {
+  padding-right: 15px;
+}
+
+.about-page .about-text {
+  padding-left: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-page .about-row {
+      flex-direction: column;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# End of About Section
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
 # Sections & Section Header
 --------------------------------------------------------------*/
 .section-header {
