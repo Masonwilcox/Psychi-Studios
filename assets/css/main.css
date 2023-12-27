@@ -372,26 +372,35 @@ h6 {
 # About Section
 --------------------------------------------------------------*/
 
-.about-page .about-row {
+.about-container {
+  text-align: center; /* Center align the header */
+}
+
+.about-container .about-image,
+.about-container .about-content {
   display: flex;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
 }
 
-.about-page .about-img {
-  padding-right: 15px;
+.about-container .about-image img {
+  max-width: auto; /* Ensure image does not overflow */
+  height: 80vh; /* Maintain aspect ratio */
 }
 
-.about-page .about-text {
-  padding-left: 15px;
+.about-container .about-content .text-wrapper {
+  padding: 10px;
+  border-radius: 5px; /* Rounded corners for the text box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow for depth */
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .about-page .about-row {
-      flex-direction: column;
+@media (max-width: 992px) { /* Adjusting for smaller screens */
+  .about-container .about-image, .about-container .about-content {
+    flex-direction: column;
+    text-align: left;
   }
 }
+
 
 
 /*--------------------------------------------------------------

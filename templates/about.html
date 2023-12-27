@@ -51,10 +51,10 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="../index.html">Home</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="team.html">Team</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -79,35 +79,41 @@
         </div>
     </section>
 
-    <!-- ======= Content Sections ======= -->
-    <section class="about-content py-5">
-        <!-- Custom Row 1: Image Left, Text Right -->
-        <div class="about-custom-row">
-            <div class="about-col-img">
-                <img src="image1.jpg" alt="Image 1" class="img-fluid">
-            </div>
-            <div class="about-col-text">
-                <h2>Section Title 1</h2>
-                <p>Description for section 1...</p>
-            </div>
-        </div>
 
-        <!-- Custom Row 2: Image Right, Text Left -->
-        <div class="about-custom-row">
-            <div class="about-col-text">
-                <h2>Section Title 2</h2>
-                <p>Description for section 2...</p>
-            </div>
-            <div class="about-col-img">
-                <img src="image2.jpg" alt="Image 2" class="img-fluid">
-            </div>
-        </div>
+    <section id="about" class="about-container">
+      <div class="container">
+        <!-- Central Header -->
 
-        <!-- Add more custom rows as needed, alternating the sides -->
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2>About Our Game</h2>
+          </div>
+        </div>
+    
+        <!-- Image and Text Row -->
+        <div class="row gy-4 justify-content-center align-items-center">
+          <!-- Image Column -->
+          <div class="col-lg-5 about-image">
+            <img src="../assets/img/AI/SpartanRecrutment.png" class="img-fluid" alt="">
+          </div>
+    
+          <!-- Text Column -->
+          <div class="col-lg-5 about-content">
+            <div class="text-wrapper">
+              <p class="fst-italic py-3">
+                Kratos tēs Apōleias unfolds in a reimagined ancient Greek mythological world, circa 500 BCE, 
+                just prior to the Persian invasion. Instead of the traditional Greek creation narrative that starts with Chaos, 
+                this game proposes an alternative origin. The tale begins with Pneuma, an untainted energy source preexisting both 
+                gods and fates. While being an embodiment of pure energy, Pneuma out of discomfort from its confinement creates 
+                Chaos.
+
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-
-</main>
-
+  </main>
 
 
   <!-- ======= Footer ======= -->
