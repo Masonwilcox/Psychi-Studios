@@ -1,0 +1,116 @@
+#sidebar {
+    position: fixed;
+    top: 100px;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: black;
+    color: white;
+    z-index: 2;
+    transition: width 0.5s ease; /* Transition only the width */
+  }
+  
+  
+  #sidebar button {
+    display: block; /* Make each button fill its own row */
+    width: 100%; /* Full width of the sidebar */
+    padding: 10px; /* Add some padding for better appearance */
+    text-align: center; /* Align the text to the left */
+    border: none; /* Remove border */
+    background: none; /* Transparent background */
+    color: white; /* Text color */
+    cursor: pointer; /* Change mouse cursor on hover */
+  }
+  
+  #sidebar button:hover {
+    background-color: #333; /* Slight background on hover for better UX */
+  }
+  
+  
+  /* Adjust the .toggle-btn and #main-content styles if necessary */
+  .toggle-btn {
+    position: fixed;
+    width: 4vw;
+    height: 4vh;
+    top: 50%;
+    left: 50%;
+    background-color: green;
+    border-radius: 4vw 4vw 0 0;
+    transform: translate(-50%, -50%) rotate(90deg);
+    cursor: pointer;
+    z-index: 3; /* Ensure the button is above the sidebar */
+  }
+  
+  #main-content {
+    transition: margin-left 0.5s;
+    z-index: 1;
+  }
+    
+  .gallery .row {
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  
+  .gallery .image-container {
+    flex-basis: calc(25% - 10px); /* Four images per row, with some margin */
+    height: 50vh;
+    margin: 5px;
+    position: relative;
+    overflow: hidden; /* Hide parts of the image that overflow the container */
+  }
+  
+  .gallery img {
+    width: 100%;
+    height: auto;
+    min-height: 100%; /* Ensure the image covers the container height */
+    object-fit: cover; /* Cover the container while maintaining aspect ratio */
+    transition: transform 0.5s ease; /* Smooth transition for zoom effect */
+  }
+  
+  /* Zoom effect on hover */
+  .gallery img:hover {
+    transform: scale(1.1);
+  }
+  
+  .artist-label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    text-align: right;
+    padding: 5px;
+    padding-right: 30px;
+    font-size: 14px;
+  }
+  
+/* The overlay that will cover the whole screen */
+#image-overlay {
+    display: none; /* Hidden by default */
+    position: fixed; /* Full-screen */
+    top: 6%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+    z-index: 10; /* Make sure it's on top */
+    cursor: pointer; /* Indicates you can click to close */
+  }
+  
+  /* The style for the enlarged image */
+  .enlarged-image {
+    position: absolute;
+    max-width: 80%; /* Limit the image size */
+    max-height: 80%;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
